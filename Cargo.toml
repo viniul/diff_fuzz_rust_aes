@@ -1,0 +1,21 @@
+[package]
+name = "fuzzing"
+version = "0.1.0"
+authors = ["Vincent Ulitzsch <vincent@srlabs.de>"]
+edition = "2018"
+
+[dependencies]
+honggfuzz = ""
+aes-ctr = ""
+generic-array = "0.13.0"
+openssl = ""
+rust-crypto = ""
+[[bin]]
+name = "aes_target"
+path = "src/main.rs"
+[[bin]]
+name = "test_difference"
+path = "src/test_difference.rs"
+
+[workspace]
+members = []
